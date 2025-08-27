@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <style>
-    .inter-normal{
-  font-family: "Inter", sans-serif;
-}
+    .bg {
+        background-color: rgba(65, 255, 107, 0.1);
+
+    }
 </style>
-<body class="inter-normal">
-    <header>
+
+<body>
+    <header class="w-11/12 mx-auto">
+       <section class="flex justify-between mt-[25px]">
+         <!-- navbar -->
+        <nav class="flex items-center gap-2">
+            <!-- logo -->
+            <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
+            <p class="text-[#006747] font-bold text-xl">Emergency <br> Service </p>
+
+        </nav>
+        <!-- icons -->
+        <div class="flex items-center gap-5">
+            <!-- heart -->
+            <div class="w-[123px] h-[52px] bg rounded-[50px]">
+                <div class="flex justify-center items-center gap-1 pt-3">
+                    <h3 class="font-extrabold">0</h3>
+                    <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
+
+                </div>
+                </div>
+                <!-- coins -->
+                <div class="w-[123px] h-[52px] bg rounded-[50px]">
+                    <div class="flex justify-center items-center gap-1 pt-3">
+                        <h3 class="font-extrabold">100</h3>
+                        <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="">
+
+                    </div>
 
 
+                </div>
+                <!-- copy -->
+                <div class="w-[127px] h-[52px] bg-[#00A63E] rounded-[50px]">
+
+                    <h3 class="text-white font-semibold px-9 py-[14px]"><span>2</span> Copy</h3>
+                </div>
+
+            </div>
+
+       </section>
     </header>
     <main>
+        
 
     </main>
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
