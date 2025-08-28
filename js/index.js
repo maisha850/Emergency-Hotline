@@ -30,11 +30,18 @@ for(let callbtn of callbtns){
             alert(`📞Calling ${subtitle} ${number} `)
              const callhistoryContainer=getElement('call-historys')
         const div=document.createElement('div')
+        const now=new Date()
+        const localSring=now.toLocaleTimeString()
         div.innerHTML=`
         <div class="w-full bg-[#FAFAFA] rounded-lg p-4 shadow-md mb-4"> 
+        <div class="flex justify-between">
+        <div>
         <h3 class="font-semibold text-lg">${title}</h3>
         <p class="text-gray-600 text-lg" >${number}</p>
-        </div>`
+        </div>
+        <h3>${localSring}</h3>
+        </div>
+        </div> `
         callhistoryContainer.appendChild(div)
         }
         else{
@@ -47,11 +54,23 @@ for(let callbtn of callbtns){
 
     })
 }
+// For clear button
+document.getElementById('clear-btn').addEventListener('click',function(){
+     const callhistoryContainer=getElement('call-historys')
+     callhistoryContainer.innerHTML=""
+
+})
+
+// For copy 
 const copyBtns=document.getElementsByClassName('copy')
 for(let copyBtn of copyBtns){
     copyBtn.addEventListener('click',function(){
         const copy=getElement('copy-btn').innerText
         const copyNum=Number(copy)+1
         getElement('copy-btn').innerText=copyNum
+        const copiedNumber=copyBtn.parentNode.parentNode.children[1].children[2].innerText
+        alert(`The number has been copied ${copiedNumber}`)
+        navigator.clipboard.writeText(copiedNumber)
     })
+
 }
