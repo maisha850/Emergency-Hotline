@@ -33,13 +33,13 @@ for(let callbtn of callbtns){
         const now=new Date()
         const localSring=now.toLocaleTimeString()
         div.innerHTML=`
-        <div class="w-full bg-[#FAFAFA] rounded-lg p-4 shadow-md mb-4"> 
+        <div class="w-full bg-[#FAFAFA] rounded-lg p-2 shadow-md mb-4"> 
         <div class="flex justify-between">
         <div>
-        <h3 class="font-semibold text-lg">${title}</h3>
-        <p class="text-gray-600 text-lg" >${number}</p>
+        <h3 class="font-semibold text-sm">${title}</h3>
+        <p class="text-gray-600 text-lg " >${number}</p>
         </div>
-        <h3>${localSring}</h3>
+        <h3 class="text-xs mt-1">${localSring}</h3>
         </div>
         </div> `
         callhistoryContainer.appendChild(div)
