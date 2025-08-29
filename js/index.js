@@ -7,6 +7,7 @@ function getElement(id){
 const hearts=document.getElementsByClassName('heart-icon')
 for(let heart of hearts){
     heart.addEventListener('click', function(){
+        
         const redHeart=getElement('heart-numbers').innerText
         const heartNum=Number(redHeart)+1;
         getElement('heart-numbers').innerText=heartNum

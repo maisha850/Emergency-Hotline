@@ -26,7 +26,7 @@
 
 <body class="max-w-[1920px]">
     <header class="w-11/12 mx-auto">
-        <section class="flex justify-between mt-[25px]">
+        <section class="flex  md:justify-between justify-start md:flex-row flex-col md:gap-0 gap-4 mt-[25px]">
             <!-- navbar -->
             <nav class="flex items-center gap-2">
                 <!-- logo -->
@@ -57,7 +57,7 @@
                 <!-- copy -->
                 <div class="w-[127px] h-[52px] bg-[#00A63E] rounded-[50px]">
 
-                    <h3 class="text-white font-semibold px-9 py-[14px]"><span id="copy-btn">0</span> Copy</h3>
+                    <h3 class="text-white font-semibold px-9 py-[14px] flex gap-1"><span id="copy-btn">0</span>Copy</h3>
                 </div>
 
             </div>
@@ -70,8 +70,8 @@
             <div class="w-full py-8 bg-radial from-[#006747] to-[#013223]">
                 <div class="flex justify-center items-center flex-col">
                     <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="">
-                    <h3 class="text-[40px] text-white font-bold">Emergency Service Directory</h3>
-                    <p class="text-xl text-white font-semibold">Government Emergency Services at Your Fingertip – A
+                    <h3 class="md:text-[40px] text-2xl text-white font-bold">Emergency Service Directory</h3>
+                    <p class="md:text-xl text-[8px] text-white font-semibold">Government Emergency Services at Your Fingertip – A
                         Project by Government of the People's Republic of Bangladesh</p>
                 </div>
 
@@ -80,10 +80,10 @@
 
         <!-- main Sections -->
         <section class="bg-[#F5FFF6] ">
-            <section class="w-11/12 mx-auto">
-                <div class="grid grid-cols-12 gap-7 ">
+            <section class="md:w-11/12 w-10/12 mx-auto">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-7 py-12">
                     <!-- cards -->
-                    <div class="grid grid-cols-3 gap-7 col-span-9 mt-12">
+                    <div class="grid md:grid-cols-3 grid-cols-1 gap-7 col-span-9 ">
                         <!-- card1 -->
                         <div class="bg-white rounded-xl shadow-lg p-8 w-full">
                             <div class="flex justify-between items-center">
@@ -301,7 +301,7 @@
                     </div>
 
                     <!-- call history -->
-                    <div class="col-span-3 mt-12">
+                    <div class="md:col-span-3 col-span-9">
                         <div class="bg-white rounded-xl shadow-lg p-6 w-full">
                             <div class="flex justify-between items-center mb-4">
                                 <h3><i class="fa-regular fa-clock text-xl text-gray-500"></i> <span
@@ -324,9 +324,12 @@
                 </div>
 
             </section>
+           
         </section>
 
     </main>
+
+    
     <script src="js/index.js"></script>
     
 
